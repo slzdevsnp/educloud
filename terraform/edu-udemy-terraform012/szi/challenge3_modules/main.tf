@@ -1,11 +1,11 @@
 #modules allow to break up main.tf
 
 module "db" {
-    source = "./db"   
+    source = "./vm_db"   
 }
 
 module "web" {
-    source = "./web"  
+    source = "./vm_web"  
 }
 
 output "PrivateIP" {

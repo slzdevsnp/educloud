@@ -1,6 +1,18 @@
 This folder contains terraform projects from terraform12steps udemy course https://www.udemy.com/course/terraform-fast-track/
 
 
+important folders:
+- first-resource
+- challenge1-vpc
+- challenge2-ec2
+- challenge3-modules
+
+CORE_CASES contains symlinks
+- first-resource
+- challenge3-modules
+- rds
+
+
 terraform learning projects:
 
 # Challenges

@@ -1,9 +1,9 @@
 
 resource "aws_instance" "web" {
-    ami = var.amazon_linux2_kernel5_10_ami
+    ami = var.amazon_linux2_kerne6_1_ami
     instance_type = "t2.micro"
     security_groups = [module.sg.sg_name]
-    user_data = file("./web/server-script.sh")
+    user_data = file("./vm_web/server-script.sh")
     tags = {
         Name = "Web Server modularized"
     }
@@ -20,5 +20,5 @@ module "eip" {
 }
 
 module "sg" {
-    source = "../sg"
+    source = "../sg_web"
 }
